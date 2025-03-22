@@ -160,6 +160,7 @@ input::placeholder{
     height: 70%;
 }
 .right-side{
+    height: 80%;
     width: 45%;
     display: flex;
     justify-content: center;
@@ -189,28 +190,6 @@ input::placeholder{
     border-radius: 10px;
     
 }
-
-/* Media Query Starts
-@media screen and (max-width:850px){
-    .logo{
-        width: 50%;
-    }
-    .search-box{
-        position: absolute;
-        top: 20px;
-        right: 0;
-        
-    }
-    .services{
-        position: absolute;
-        top: 100px;
-        right: 0;
-    }
-    .exam-stress{
-        display: none;
-    }
-    
-} */
 
 .service-container{
     height: 50vh;
@@ -264,6 +243,8 @@ input::placeholder{
     flex-direction: column;
     display: none;
     animation: type 0.8s  forwards ease-out;
+    position: absolute;
+    top:92%;
 }
 .types ul{
     height: 70%;
@@ -290,13 +271,35 @@ ul li{
     transition: 0.8s;
 
 }
-@keyframes type {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.event{
+    height: 70vh;
+    width: 100%;
+}
+.event h1{
+    text-align: center;
+    color: var(--maastricht_blue);
+    padding: 20px 0 50px  0;
+}
+.event-container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.event-details{
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0  0 10px #09203D;
+  padding-top:10px ;
+  border-radius: 10px;
+}
+.event-details img{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    
 }
