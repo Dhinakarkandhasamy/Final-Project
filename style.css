@@ -263,6 +263,7 @@ input::placeholder{
     background-color: var(--maastricht_blue);
     flex-direction: column;
     display: none;
+    animation: type 0.8s  forwards ease-out;
 }
 .types ul{
     height: 70%;
@@ -288,4 +289,14 @@ ul li{
     letter-spacing: 1.3px;
     transition: 0.8s;
 
+}
+@keyframes type {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
