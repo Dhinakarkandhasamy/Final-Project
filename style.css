@@ -241,7 +241,7 @@ input::placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    color: var(--spatial);
     transition: 0.8s;
 }
 .sem a{
