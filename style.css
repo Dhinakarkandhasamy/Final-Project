@@ -272,34 +272,53 @@ ul li{
 
 }
 .event{
-    height: 70vh;
+    height: 80vh;
     width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
 .event h1{
-    text-align: center;
     color: var(--maastricht_blue);
-    padding: 20px 0 50px  0;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding: 20px 0 0 0;
+}
+.event p{
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 .event-container{
-    height: 80%;
+    height: 90%;
     width: 100%;
     display: flex;
-    gap: 10px;
-    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
+    position: relative;
 }
 .event-details{
-  height: 400px;
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0  0 10px #09203D;
-  padding-top:10px ;
-  border-radius: 10px;
+    height: 450px;
+    width: 400px;
+    background-color: var(--maastricht_blue);
+    border-radius: 20px 20px 0 0 ;
+    position: relative;
+    overflow: hidden;
 }
 .event-details img{
-    height: 300px;
+    height: 60%;
     width: 100%;
-    border-radius: 10px;
-    
+    transition: .3s ease;
+}
+.event-details img:hover{
+    transform: scale(1.05); 
+}
+.event-details h1{
+    color: var(--maastricht_blue);
+    text-align: left;
+    padding: 20px 0 0 20px;
+    font-size: 22px;
+    font-weight: 500;
 }
