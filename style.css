@@ -272,7 +272,7 @@ ul li{
 
 }
 .event{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     /* display: flex;
     flex-direction: column;
@@ -291,7 +291,7 @@ ul li{
     padding-bottom: 20px;
 }
 .event-container{
-    height: 90%;
+    height: 80%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -306,9 +306,10 @@ ul li{
     border-radius: 20px 20px 0 0 ;
     position: relative;
     overflow: hidden;
+    font-family: poppins;
 }
 .event-details img{
-    height: 60%;
+    height: 50%;
     width: 100%;
     transition: .3s ease;
 }
@@ -316,9 +317,26 @@ ul li{
     transform: scale(1.05); 
 }
 .event-details h1{
-    color: var(--maastricht_blue);
+    color: var(--spatial);
     text-align: left;
     padding: 20px 0 0 20px;
     font-size: 22px;
     font-weight: 500;
+}
+.event-details p{
+    text-align: left;
+    color: ivory;
+   padding: 20px;
+   line-height: 1.1;
+   font-size: 20px;
+}
+.event-details a{
+    color: var(--spatial);
+    position: absolute;
+    bottom: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.event-details i{
+    padding-left: 10px;
 }
