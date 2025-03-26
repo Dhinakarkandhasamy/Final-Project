@@ -221,7 +221,7 @@ input::placeholder{
     align-items: center;
     justify-content: center;
     color: var(--spatial);
-    transition: 0.8s;
+    transition: 0.3s;
 }
 .sem a{
     color: var(--spatial);
@@ -272,7 +272,7 @@ ul li{
 
 }
 .event{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     /* display: flex;
     flex-direction: column;
@@ -307,11 +307,13 @@ ul li{
     position: relative;
     overflow: hidden;
     font-family: poppins;
+   
 }
 .event-details img{
     height: 50%;
     width: 100%;
     transition: .3s ease;
+    border: 2px solid white;
 }
 .event-details img:hover{
     transform: scale(1.05); 
@@ -319,13 +321,13 @@ ul li{
 .event-details h1{
     color: var(--spatial);
     text-align: left;
-    padding: 20px 0 0 20px;
+    padding: 25px 0 0 20px;
     font-size: 22px;
     font-weight: 500;
 }
 .event-details p{
-    text-align: left;
-    color: ivory;
+   text-align: left;
+   color: ivory;
    padding: 20px;
    line-height: 1.1;
    font-size: 20px;
@@ -339,4 +341,69 @@ ul li{
 }
 .event-details i{
     padding-left: 10px;
+}
+.subjects{
+   height: 150vh;
+   width: 100%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.subjects h1{
+    height: 7%;
+    width: 100%;
+    text-align: center;
+}
+.subject-container{
+  
+}
+.papers{
+   
+}
+.select-box{
+    height: 15%;
+    width: 100%;
+    background-color: var(--maastricht_blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.q-paper a,.material a{
+    background-color: var(--spatial);
+    color: var(--maastricht_blue);
+    padding:20px 40px;
+    border-radius: 10
+}
+.subject-container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 20%;
+    flex-grow: 1;
+    gap: 20px;
+    padding: 5% 0;
+ 
+}
+.papers{
+    height: 350px;
+    width: 200px;
+    background-color: var(--maastricht_blue);
+    border-radius: 20px 20px 0 0 ;
+    position: relative;
+    overflow: hidden;
+    font-family: poppins;
+    padding: 0 13%;
+    position: relative;
+}
+.papers img{
+    height: 200px;
+    width: 356px;
+    position: absolute;
+    left: 0;
+    border: 2px solid white;
 }
