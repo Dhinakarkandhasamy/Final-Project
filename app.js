@@ -1,3 +1,7 @@
-var semButton = document.querySelector("#sem1").addEventListener("click", function() {
-    document.querySelector(".types").style.display="flex";
-});
+var qPaper = document.getElementById("q-paper").addEventListener('click',function(){
+    document.querySelector('.service-container').style.display="flex"
+})
+
+var sem1 = document.getElementById("sem1").addEventListener("click",function(){
+    document.querySelector(".subject-container").style.display="flex"
+})
