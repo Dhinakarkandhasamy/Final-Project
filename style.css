@@ -201,7 +201,22 @@ input::placeholder{
     background-color: var(--spatial);
     flex-direction: column;
     padding-bottom: 20px;
+    animation: sem 1s ease-out forwards;
+    transform: translateX(-100%);
+ 
 }
+
+@keyframes sem {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .semsesters{
     width: 90%;
     display: flex;
@@ -387,7 +402,7 @@ h1 span{
     margin-bottom: 2rem;
     width: 100%;
     column-gap: 45px;
-    padding: 0 3%;
+    justify-content: center;
     
 }
 .select-item{
