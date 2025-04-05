@@ -198,7 +198,6 @@ input::placeholder{
     justify-content: space-around;
     align-items: center;
     margin: 10px 0 0  0;
-    background-color: var(--spatial);
     flex-direction: column;
     padding-bottom: 20px;
     animation: sem 1s ease-out forwards;
@@ -228,9 +227,8 @@ input::placeholder{
     
 }
 .sem{
-    height: 80px;
-    width: 200px;
-    background-color: var(--maastricht_blue);
+    height: 200px;
+    width: 250px;
     margin: 10px 60px 0 60px;
     border-radius: 10px;
     display: flex;
@@ -241,9 +239,13 @@ input::placeholder{
     
 }
 .sem a{
+    padding: 20px 30px;
+    background-color: var(--maastricht_blue);
     color: var(--spatial);
     font-size: 23px;
     letter-spacing: 1.3px;
+    border-radius: 15px;
+    text-align: center;
 }
 .sem i{
     padding-right: 1rem;
@@ -252,7 +254,7 @@ input::placeholder{
 .sem:hover{
     cursor: pointer;
     scale: 1.1;
-}
+}  
 .types{
     height: 50vh;
     width: 100%;
